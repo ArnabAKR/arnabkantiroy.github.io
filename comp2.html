@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Complaint Registration</title>
+<link rel="stylesheet" type="text/css" href="comp2.css">
+</head>
+<body>
+	<div class="bckimg">
+	<img src="img1.png" alt="logo" width="100px" height="40"> 
+	<div class="box">
+<h1 class="h"><u>File Your Complain</u></h1>
+
+<form class="text">
+  <h3>Date of form fillup:<br><input type="date" required><br><br>
+  Enter your E-mail:<br><input type="text" required placeholder="eg:arnab3399@gmail.com">
+  <br>
+
+  The complaint is regarding ( Mention the Autority/Person/Company against whom the complaint is to be filed ) :<br><textarea rows="5" cols="150" placeholder="Write here briefly...."></textarea required><br><br>
+  The nature of complaint:<br><textarea rows="5" cols="150" placeholder="Write here briefly...." required></textarea><br><br>
+  
+  The specific details of the complaint:<br><textarea rows="5" cols="150" placeholder="Write here briefly...."></textarea><br><br></h3>
+ <input class="button" type="submit" value=" Sumbit "onclick="myFunction()">
+ <script type="text/javascript">
+function buttonclick(){
+  window.location.href = 'feedback.html';
+}
+function myFunction() {
+  var txt;
+  var r = confirm("Sumbit Complaint?");
+  if (r == true) {
+    window.location.href = 'feedback.html'
+  } else {
+    window.location.href = 'comp2.html'
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback Form</title>
+<link rel="stylesheet" type="text/css" href="feedback.css">
+</head>
+<body>
+  <div class="bckimg">
+    <img src="img1.png" alt="logo" width="100px" height="40">
+  <h1 class="h">Feedback Form</h1>
+    <h3 class="h">Your Complaint has been lodged. We would  get back to you Shortly</h3>
+    <h5 class="h">We would love to hear your thoughts, concerns or problems with anything so we can improve!</h5><br><hr>
+      <div class="box">
+      <form>
+        <fieldset>
+          <legend style="text-align: center;">Feedback</legend>
+      <h3>Feedback Type</h3>
+      <input type="radio" name="g" value="ma">Comments
+      <input type="radio" name="ge" value="fe">Bug Reports
+      <input type="radio" name="ke" value="ke">Questions<br><br>
+      Describe Feedback:<br>
+      <textarea rows="6" cols="50" placeholder="Write your feedback here"></textarea><br><br>
+      Name:<br><input type="text"><br>
+      E-mail:<br><input type="text" placeholder="ex: myname@example.com"><br><br>
+      <button type="button" onclick="myFunction() ">Sumbit Feedback</button><br><br>
+      <br>
+
+<script type="text/javascript">
+function buttonclick(){
+  window.location.href = 'index.html';
+}
+function myFunction() {
+  var txt;
+  var r = confirm("Thankyou for your feedback");
+  if (r == true) {
+    window.location.href = 'index.html'
+  } else {
+    window.location.href = 'index.html'
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+    </fieldset></form>
+    <hr>
+    </div>
+    </div>
+</body>
